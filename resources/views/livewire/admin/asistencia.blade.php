@@ -52,7 +52,7 @@
                         <th>Cant_Adul</th>
                         <th>Cant_Esp</th>
                         <th>Importe</th>
-                        <th>Seg Func</th>
+                        <th>Segunda_Funcion</th>
                         <th>Asist</th>
                     </tr>
                 </thead>

@@ -85,10 +85,10 @@ class Asistencia extends Component
             $this->totIng+= $reserva->importe;
         }
 
-        $this->totEvento = DB::select('SELECT SUM(importe) as total from (SELECT DISTINCT(reservas.id), importe FROM reservas
+        /*$this->totEvento = DB::select('SELECT SUM(importe) as total from (SELECT DISTINCT(reservas.id), importe FROM reservas
         JOIN funcione_reserva on reservas.id = funcione_reserva.reserva_id
         JOIN funciones on funcione_reserva.funcione_id = funciones.id
-        WHERE funciones.evento_id = 10 AND reservas.asist = 1) sub;')[0]->total;
+        WHERE funciones.evento_id = 10 AND reservas.asist = 1) sub;')[0]->total;*/
 
         return view('livewire.admin.asistencia', compact('reservt', 'eventos', 'funciones'));
     }
